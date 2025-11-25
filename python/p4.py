@@ -3,10 +3,7 @@ from itertools import combinations
 
 def is_palindrome(x):
     w = str(x)
-    w1 = w[:len(w)//2]
-    w2 = w[len(w)//2:][::-1]
-    if w1 == w2: return True
-    return False
+    return w == w[::-1]
 
 
 def palindrome(n):
